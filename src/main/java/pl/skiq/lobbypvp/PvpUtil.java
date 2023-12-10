@@ -1,4 +1,4 @@
-package pl.skiq.lobbypvp.util;
+package pl.skiq.lobbypvp;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

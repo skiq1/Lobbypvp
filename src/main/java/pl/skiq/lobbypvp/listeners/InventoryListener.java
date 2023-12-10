@@ -8,7 +8,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.inventory.ItemStack;
 import pl.skiq.lobbypvp.Lobbypvp;
-import pl.skiq.lobbypvp.util.PvpUtil;
+import pl.skiq.lobbypvp.PvpUtil;
 
 public class InventoryListener implements Listener {
     @EventHandler

@@ -6,7 +6,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import pl.skiq.lobbypvp.listeners.DamageListener;
 import pl.skiq.lobbypvp.listeners.InventoryListener;
 import pl.skiq.lobbypvp.listeners.PlayerJoinListener;
-import pl.skiq.lobbypvp.util.PvpUtil;
 
 public final class Lobbypvp extends JavaPlugin {
 
