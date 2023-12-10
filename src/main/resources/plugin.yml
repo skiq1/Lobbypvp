@@ -1,0 +1,4 @@
+name: lobbypvp
+version: '${project.version}'
+main: pl.skiq.lobbypvp.Lobbypvp
+api-version: '1.19'
