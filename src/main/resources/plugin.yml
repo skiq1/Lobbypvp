@@ -6,3 +6,6 @@ commands:
   stats:
     description: Show player stats.
     usage: /stats <player>
+  log:
+    description: Show logs.
+    usage: /log [number]

@@ -1,2 +1,6 @@
 mongo-client-uri:
 mongo-database:
+redis-host:
+redis-port:
+redis-username:
+redis-password:

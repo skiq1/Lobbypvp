@@ -1,11 +1,14 @@
 package pl.skiq.lobbypvp.listeners;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import pl.skiq.lobbypvp.DatabaseUtil;
+import pl.skiq.lobbypvp.Lobbypvp;
+import pl.skiq.lobbypvp.RedisLogUtil;
 
 public class DeathListener implements Listener{
     @EventHandler
@@ -31,5 +34,8 @@ public class DeathListener implements Listener{
         //victim
         DatabaseUtil.addDeath(playerUUID);
         DatabaseUtil.resetKillstreak(playerUUID);
+
+        //redis
+        Bukkit.getScheduler().runTaskAsynchronously(Lobbypvp.instance(), () -> RedisLogUtil.log(player.getName(), killer.getName()));
     }
 }
