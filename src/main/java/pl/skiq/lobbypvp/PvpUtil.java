@@ -15,7 +15,7 @@ public class PvpUtil{
     private final int delayInSec = 3;
 
     private ItemStack getSword(){
-        ItemStack sword = new ItemStack(Material.WOODEN_SWORD);
+        ItemStack sword = new ItemStack(Material.DIAMOND_SWORD);
         ItemMeta meta = sword.getItemMeta();
         meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&cMiecz"));
         sword.setItemMeta(meta);
@@ -34,8 +34,8 @@ public class PvpUtil{
 
     private void wearArmor(Player player){
         PlayerInventory inv = player.getInventory();
-        inv.setHelmet(new ItemStack(Material.DIAMOND_HELMET));
-        inv.setChestplate(new ItemStack(Material.DIAMOND_CHESTPLATE));
+//        inv.setHelmet(new ItemStack(Material.DIAMOND_HELMET));
+//        inv.setChestplate(new ItemStack(Material.DIAMOND_CHESTPLATE));
         inv.setLeggings(new ItemStack(Material.DIAMOND_LEGGINGS));
         inv.setBoots(new ItemStack(Material.DIAMOND_BOOTS));
     }

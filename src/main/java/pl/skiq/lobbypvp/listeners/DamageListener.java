@@ -5,6 +5,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import pl.skiq.lobbypvp.DatabaseUtil;
 
 public class DamageListener implements Listener {
     @EventHandler
@@ -15,9 +16,11 @@ public class DamageListener implements Listener {
         Player damager = (Player) event.getDamager();
         Player victim = (Player) event.getEntity();
 
-        if(!(damager.getInventory().getItemInMainHand().getType() == Material.WOODEN_SWORD &&
-                victim.getInventory().getItemInMainHand().getType() == Material.WOODEN_SWORD)){
+        if(!(damager.getInventory().getItemInMainHand().getType() == Material.DIAMOND_SWORD &&
+                victim.getInventory().getItemInMainHand().getType() == Material.DIAMOND_SWORD)){
             event.setCancelled(true);
         }
+
+        DatabaseUtil.addDamageDealt(damager.getUniqueId().toString(), (int) event.getDamage());
     }
 }

@@ -20,7 +20,7 @@ public class InventoryListener implements Listener {
         ItemStack currentItem = player.getInventory().getItem(event.getNewSlot());
         ItemStack previousItem = player.getInventory().getItem(event.getPreviousSlot());
 
-        if(previousItem != null && previousItem.getType() == Material.WOODEN_SWORD){
+        if(previousItem != null && previousItem.getType() == Material.DIAMOND_SWORD){
             pvpUtil.disablePvp(player);
             return;
         }
