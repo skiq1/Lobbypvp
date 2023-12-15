@@ -3,6 +3,7 @@ package pl.skiq.lobbypvp;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import pl.skiq.lobbypvp.commands.StatsCommand;
 import pl.skiq.lobbypvp.listeners.DamageListener;
 import pl.skiq.lobbypvp.listeners.DeathListener;
 import pl.skiq.lobbypvp.listeners.InventoryListener;
@@ -35,6 +36,7 @@ public final class Lobbypvp extends JavaPlugin {
         pvpUtil = new PvpUtil();
 
         registerListeners();
+        registerCommands();
     }
 
     private void registerListeners(){
@@ -44,6 +46,10 @@ public final class Lobbypvp extends JavaPlugin {
         pm.registerEvents(new PlayerJoinListener(), this);
         pm.registerEvents(new DamageListener(), this);
         pm.registerEvents(new DeathListener(), this);
+    }
+
+    private void registerCommands(){
+        getCommand("stats").setExecutor(new StatsCommand());
     }
 
     public PvpUtil pvpUtil(){

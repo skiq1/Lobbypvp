@@ -2,3 +2,7 @@ name: lobbypvp
 version: '${project.version}'
 main: pl.skiq.lobbypvp.Lobbypvp
 api-version: '1.19'
+commands:
+  stats:
+    description: Show player stats.
+    usage: /stats <player>

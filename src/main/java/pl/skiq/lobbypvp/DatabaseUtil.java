@@ -72,7 +72,7 @@ public class DatabaseUtil {
         players.updateOne(player, new Document("$set", new Document(field, value)));
     }
 
-    private static Document getPlayer(String uuid){
+    public static Document getPlayer(String uuid){
         Document player = players.find(new Document("uuid", uuid)).first();
         if(player == null){
             createPlayer(uuid);
