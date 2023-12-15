@@ -6,9 +6,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
-import pl.skiq.lobbypvp.DatabaseUtil;
+import pl.skiq.lobbypvp.util.DatabaseUtil;
 import pl.skiq.lobbypvp.Lobbypvp;
-import pl.skiq.lobbypvp.RedisLogUtil;
+import pl.skiq.lobbypvp.util.RedisLogUtil;
 
 public class DeathListener implements Listener{
     @EventHandler

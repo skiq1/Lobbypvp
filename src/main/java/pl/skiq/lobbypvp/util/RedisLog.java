@@ -1,4 +1,4 @@
-package pl.skiq.lobbypvp;
+package pl.skiq.lobbypvp.util;
 
 import java.sql.Timestamp;
 

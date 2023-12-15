@@ -5,7 +5,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import pl.skiq.lobbypvp.DatabaseUtil;
+import pl.skiq.lobbypvp.util.DatabaseUtil;
 
 public class DamageListener implements Listener {
     @EventHandler

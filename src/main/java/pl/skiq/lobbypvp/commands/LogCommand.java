@@ -4,8 +4,8 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import pl.skiq.lobbypvp.RedisLog;
-import pl.skiq.lobbypvp.RedisLogUtil;
+import pl.skiq.lobbypvp.util.RedisLog;
+import pl.skiq.lobbypvp.util.RedisLogUtil;
 
 import java.util.List;
 

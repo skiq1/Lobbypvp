@@ -1,4 +1,4 @@
-package pl.skiq.lobbypvp;
+package pl.skiq.lobbypvp.util;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;

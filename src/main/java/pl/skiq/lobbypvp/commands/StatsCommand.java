@@ -7,7 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import pl.skiq.lobbypvp.DatabaseUtil;
+import pl.skiq.lobbypvp.util.DatabaseUtil;
 
 public class StatsCommand implements CommandExecutor {
 
